@@ -1,0 +1,52 @@
+{
+  "cve": "CVE-2026-28650",
+  "timestamp": "2026-10-23T15:16:47.7745649+09:00",
+  "serial": "emulator-5554",
+  "expected": "vulnerable",
+  "postSuspendDelaySeconds": 60,
+  "device": {
+    "release": "16",
+    "securityPatch": "2025-07-05",
+    "fingerprint": "google/sdk_gphone64_x86_64/emu64xa:16/BE2A.250530.026.F3/13894323:userdebug/dev-keys"
+  },
+  "process": {
+    "pidBefore": "5325",
+    "pidAfter": "5325",
+    "remainedAlive": true
+  },
+  "before": {
+    "parent": {
+      "found": true,
+      "type": "APPLICATION_OVERLAY",
+      "shown": true,
+      "visible": true,
+      "hiddenWhileSuspended": false
+    },
+    "child": {
+      "found": true,
+      "type": "APPLICATION_PANEL",
+      "shown": true,
+      "visible": true,
+      "hiddenWhileSuspended": false
+    }
+  },
+  "afterSuspend": {
+    "parent": {
+      "found": true,
+      "type": "APPLICATION_OVERLAY",
+      "shown": false,
+      "visible": false,
+      "hiddenWhileSuspended": true
+    },
+    "child": {
+      "found": true,
+      "type": "APPLICATION_PANEL",
+      "shown": true,
+      "visible": true,
+      "hiddenWhileSuspended": false
+    }
+  },
+  "vulnerableBehaviorObserved": true,
+  "patchedBehaviorObserved": false,
+  "passed": true
+}
